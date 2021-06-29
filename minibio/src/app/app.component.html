@@ -1,0 +1,43 @@
+<div [class.contenedorlight]="!isNightMode" [class.contenedordark]="isNightMode">
+  <img src="../assets/nat.png" class="foto" alt="Natalia" />
+  <h1 class="usuario">Natalia Guerrero</h1>
+  <p class="descripcion">Frontend developer y diseñadora💻</p>
+  <p class="descripcion">Visita mis link oficiales</p>
+  <a class="links" href="https://github.com/NanyuB">
+    <div class="left-item">
+      <i class="fab fa-github"></i>
+    </div>
+    <div class="right-item">
+      <p>Mis proyectos en github</p>
+    </div>
+  </a>
+  <a class="links" href="https://twitter.com/NanyuBorcloy">
+    <div class="left-item">
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div class="right-item">
+      <p>Twitter</p>
+    </div>
+  </a>
+  <a class="links" href="https://www.youtube.com/c/nanyuborcloy">
+    <div class="left-item">
+      <i class="fab fa-youtube"></i>
+    </div>
+    <div class="right-item">
+      <p>Youtube</p>
+    </div>
+  </a>
+  <a class="links">
+    <div class="left-item">
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <div class="right-item">
+      <p>Mi linkedin</p>
+    </div>
+  </a>
+  <button class="btn-change"(click)="darkMode()">
+    <i *ngIf="isNightMode"class="fas fa-sun"></i>
+    <i *ngIf="!isNightMode" class="fas fa-moon"></i>
+
+  </button>
+</div>
