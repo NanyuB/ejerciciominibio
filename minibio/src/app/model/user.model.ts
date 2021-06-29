@@ -2,11 +2,10 @@ export class User {
     image?:string;
     name?: string;
     descripcion?: string;
-    redes?: Redes;
+    redes?: Array<Red>;
 }
-export class Redes{
-    github?:string;
-    twitter?:string;
-    attom?:string;
-    linkedin?: string;
+export class Red {
+name?: string;
+icon?: string;
+link?: string;    
 }
